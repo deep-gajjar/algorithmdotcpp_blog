@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { PostCard, PostWidget, Categories, Header } from '../components';
 import { getPosts } from '../services'
 
-
 // const posts = [
 //   { title: 'React Testing', excerpt: 'Learn React Testing' },
 //   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },

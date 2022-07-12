@@ -21,7 +21,7 @@ const PostDetail = ({ post }) => {
 
     switch (type) {
       case 'code-block':
-        return <pre key={index} className=" font-mono mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</pre>;
+        return <div className="container mb-4 rounded-lg bg-black overflow-auto bg-opacity-90"><pre key={index} className=" font-mono font-thin text-[14.5px]	 text-white  pl-2">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</pre></div>;
       case 'heading-three':
         return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'heading-two':
@@ -86,7 +86,7 @@ const PostDetail = ({ post }) => {
           return getContentFragment(index, children, typeObj, typeObj.type)
         })}
 
-        {console.log(post.content.raw)}
+        {/* {console.log(post.content.raw)} */}
       </div>
 
     </div>
