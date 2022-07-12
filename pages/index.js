@@ -1,6 +1,4 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { PostCard, PostWidget, Categories, Header } from '../components';
 import { getPosts } from '../services'
 
@@ -9,7 +7,7 @@ import { getPosts } from '../services'
 //   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
 // ];
 
-const Home: NextPage = ({ posts }) => {
+export default function Home({posts}){
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -34,7 +32,6 @@ const Home: NextPage = ({ posts }) => {
   )
 }
 
-export default Home
 
 
 export async function getStaticProps() {
