@@ -21,7 +21,7 @@ const Header = () => {
 				<div className="md:float-left block">
 					<Link href='/'>
 						<span className="cursor-pointer font-bold text-white text-4xl">
-								Algorithm.cpp
+							Blog Website
 						</span>
 					</Link>
 				</div>
