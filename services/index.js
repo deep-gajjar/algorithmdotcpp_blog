@@ -134,15 +134,15 @@ export const getCategories = async () => {
 
 export const submitComment = async (obj) => {
   const result = await fetch('/api/comments', {
-    method: "POST",
+    method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(obj),
   });
 
   return result.json();
-}
+};
 
 export const getComments = async (slug) => {
   const query = gql`
